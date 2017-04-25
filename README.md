@@ -1,6 +1,6 @@
 # npmtest-tabtab
 
-#### test coverage for  [tabtab (v2.2.2)](https://github.com/mklabs/node-tabtab#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-tabtab.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tabtab) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tabtab.svg)](https://travis-ci.org/npmtest/node-npmtest-tabtab)
+#### basic test coverage for  [tabtab (v2.2.2)](https://github.com/mklabs/node-tabtab#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-tabtab.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-tabtab) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-tabtab.svg)](https://travis-ci.org/npmtest/node-npmtest-tabtab)
 
 #### tab completion helpers, for node cli programs. Inspired by npm completion.
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-tabtab/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-tabtab/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-tabtab/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-tabtab/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-tabtab/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-tabtab/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-tabtab/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-tabtab/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-tabtab/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-tabtab/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-tabtab/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-tabtab/build/coverage.html/index.html)
 
