@@ -197,16 +197,16 @@
     <h1>Code coverage report for <span class="entity">node-npmtest-tabtab/node_modules/tabtab/src/commands/index.js</span></h1>
     <h2>
         
-        Statements: <span class="metric">53.03% <small>(35 / 66)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">65.15% <small>(43 / 66)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Branches: <span class="metric">23.68% <small>(9 / 38)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">31.58% <small>(12 / 38)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Functions: <span class="metric">26.32% <small>(5 / 19)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">47.37% <small>(9 / 19)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         
-        Lines: <span class="metric">44.68% <small>(21 / 47)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">59.57% <small>(28 / 47)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
@@ -408,7 +408,7 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -417,12 +417,12 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -509,7 +509,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -536,7 +536,7 @@ var _installer2 = _interopRequireDefault(_installer);
 &nbsp;
 function _interopRequireDefault(obj) { return obj &amp;&amp; obj.__esModule ? <span class="branch-0 cbranch-no" title="branch not covered" >obj </span>: { default: obj }; }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function _classCallCheck(instance, Constructor) {</span> <span class="cstat-no" title="statement not covered" >if (!(instance instanceof Constructor)) { <span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function"); </span>} </span>}
+function _classCallCheck(instance, Constructor) { <span class="missing-if-branch" title="if path not taken" >I</span>if (!(instance instanceof Constructor)) { <span class="cstat-no" title="statement not covered" >throw new TypeError("Cannot call a class as a function"); </span>} }
 &nbsp;
 var fs = require('fs');
 var path = require('path');
@@ -561,8 +561,8 @@ var exists = _require.existsSync;
 var Commands = function () {
   _createClass(Commands, [{
     key: 'allowed',
-    get: <span class="fstat-no" title="function not covered" >function get() {</span>
-<span class="cstat-no" title="statement not covered" >      return ['install', 'uninstall', 'list', 'search', 'add', 'rm', 'completion'];</span>
+    get: function get() {
+      return ['install', 'uninstall', 'list', 'search', 'add', 'rm', 'completion'];
     }
 &nbsp;
     // Public: Creates a new command instance. this.complete is an instance of
@@ -570,13 +570,13 @@ var Commands = function () {
 &nbsp;
   }]);
 &nbsp;
-<span class="fstat-no" title="function not covered" >  function Commands(options) {</span>
-<span class="cstat-no" title="statement not covered" >    _classCallCheck(this, Commands);</span>
+  function Commands(options) {
+    _classCallCheck(this, Commands);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    this.options = options || {};</span>
-<span class="cstat-no" title="statement not covered" >    this.complete = new Complete(this.options);</span>
-<span class="cstat-no" title="statement not covered" >    this.installer = new _installer2.default(this.options, this.complete);</span>
-<span class="cstat-no" title="statement not covered" >    this.shell = (process.env.SHELL || '').split('/').slice(-1)[0];</span>
+    this.options = options || <span class="branch-1 cbranch-no" title="branch not covered" >{};</span>
+    this.complete = new Complete(this.options);
+    this.installer = new _installer2.default(this.options, this.complete);
+    this.shell = (process.env.SHELL || <span class="branch-1 cbranch-no" title="branch not covered" >'')</span>.split('/').slice(-1)[0];
   }
 &nbsp;
   // Commands
@@ -662,8 +662,8 @@ var Commands = function () {
 &nbsp;
   }, {
     key: 'help',
-    value: <span class="fstat-no" title="function not covered" >function help() {</span>
-<span class="cstat-no" title="statement not covered" >      return '\n    $ tabtab &lt;command&gt; [options]\n\n    Options:\n      -h, --help              Show this help output\n      -v, --version           Show package version\n      --name                  Binary name tabtab should complete\n      --auto                  Use default SHELL configuration file\n                              (~/.bashrc, ~/.zshrc or ~/.config/fish/config.fish)\n\n    Commands:\n\n      install                 Install and enable completion file on user system\n      uninstall               Undo the install command\n    ';</span>
+    value: function help() {
+      return '\n    $ tabtab &lt;command&gt; [options]\n\n    Options:\n      -h, --help              Show this help output\n      -v, --version           Show package version\n      --name                  Binary name tabtab should complete\n      --auto                  Use default SHELL configuration file\n                              (~/.bashrc, ~/.zshrc or ~/.config/fish/config.fish)\n\n    Commands:\n\n      install                 Install and enable completion file on user system\n      uninstall               Undo the install command\n    ';
       // list                    List the completion files managed by tabtab
       // search                  Search npm registry for tabtab completion files / dictionaries
       // add                     Install additional completion files / dictionaries
@@ -680,7 +680,7 @@ module.exports = exports['default'];
 </table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 08:58:50 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 25 2017 12:55:29 GMT+0000 (UTC)</div>
 </div>
 </body>
 </html>
